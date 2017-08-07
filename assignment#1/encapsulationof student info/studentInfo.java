@@ -1,7 +1,7 @@
 public class studentInfo{
 	private String name;
 	private int age;
-	public int rollno;
+	private int rollno;
 	private String email;
 	
 	// getter and settter methods
