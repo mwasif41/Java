@@ -5,7 +5,7 @@ public class stringException {
 	
 	private String s;
 	
-	public void setString(String x){
+	public void setString(String x) throws nullStringException{
 		if(x == null){
 			throw new nullStringException("The string is null");
 		}
