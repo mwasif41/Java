@@ -16,11 +16,14 @@ public class primeNumber {
 			Scanner s = new Scanner(System.in);
 			System.out.println("Enter the number to check");
 			int num = s.nextInt();
-			boolean check = isPrime(num);
-			if(check == true)
-				System.out.println("The given number is a prime number");
-			else
-				System.out.println("The given number is not a prime number");
+			s.close();
+			int count = 0;
+			for(int i=2;i<num;i++){
+				if(isPrime(i)){
+					count++;
+				}
+			}
+			System.out.println("The count of prime number less than the given number is :" + count);
 			
 				
 			
