@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student DashBoard</title>
+</head>
+<body>
+	<h1>Welcome to Student Portal</h1>
+	<h2>Please enter student details to enter into the portal</h2>
+	<form action="/StudentCRUD/AddRecord" method="post">
+        <table>
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Roll no:</td>
+                <td><input type="number" name="rollno"></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td><input type="text" name="dept"></td>
+            </tr>
+            <tr>
+                <td>Student Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" value="Save the record">  </td>
+            </tr>
+        </table>      
+
+	</form><hr/>
+	<a href="/StudentCRUD/ShowRecord"> Show student record </a><hr/>
+</body>
+</html>
