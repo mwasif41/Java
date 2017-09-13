@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student form</title>
+</head>
+<body>
+	<h3>Enter the detail of student</h3>
+	<form action="StudentController" method="POST">
+		<table>
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Roll no:</td>
+                <td><input type="number" name="rollno"></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td><input type="text" name="dept"></td>
+            </tr>
+            <tr>
+                <td>Student Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" name="addSubmit" value="Save the record">  </td>
+            </tr>
+        </table>      
+
+	</form>
+	<a href="#"> Show student record </a><hr/>
+</body>
+</html>

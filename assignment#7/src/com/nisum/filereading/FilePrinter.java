@@ -8,8 +8,11 @@ import java.io.File;
  */
 public class FilePrinter {
 
-	public static void main(String[] args) {
-		File file = new File("C:\\Users\\mwasif\\Desktop\\work\\Java\\assignment#6"); // here we will pass the path of directory
+	/**The method to print the path of all the files on the console
+	 * @param folderPath path of the folder
+	 */
+	public void printFilePath(String folderPath){
+		File file = new File(folderPath); // here we will pass the path of directory
 		File[] path = file.listFiles(); // to get all files paths
 		System.out.println("List of file is:");
 		for(File p:path){
@@ -17,5 +20,6 @@ public class FilePrinter {
 			System.out.println(p.getName()); //then prints its name
 		}
 	}
+	
 
 }

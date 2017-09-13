@@ -23,35 +23,12 @@ public class MyThread extends Thread {
 	@Override
 	public void run(){
 		System.out.println("Currently running :" + threadName);
-		try{for(int x = 5; x>0;x--){
-		System.out.println(x);
+		try{for(int count = 5; count>0;count--){
+		System.out.println(count);
 		Thread.sleep(1000);
-		}}catch(Exception e){e.printStackTrace();}
+		}}catch(Exception exception){exception.printStackTrace();}
 		
 	}
 	
-	/**This main program creates two threads and one main thread(by default)
-	 * the use of join() method is used to restict main method from ending 
-	 * 
-	 */
-	public static void main(String[] args) {
-		System.out.print(" main thread starting");
-		MyThread thread2 = new MyThread("Thread-1");
-		MyThread thread3 = new MyThread("Thread-2");
-		
-		thread2.start();
-		thread3.start();
-	
-		try{
-		thread2.join();
-		thread3.join();
-		}catch(Exception exception){exception.printStackTrace();}
-		
-		
-
-		System.out.println("Main thread ending");
-		
-		
-	}
 
 }
